@@ -18,9 +18,12 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
+
+
+const ownerNumber = ["94776907496"]
+
 const connectDB = require('./lib/mongodb');
 connectDB();
-const ownerNumber = ["94776907496"]
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
