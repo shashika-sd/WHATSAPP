@@ -20,7 +20,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const connectDB = require('./lib/mongodb');
 connectDB();
-const ownerNumber = config.OWNER_NUM || '94776907496';
+const ownerNumber = ["94776907496"]
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
